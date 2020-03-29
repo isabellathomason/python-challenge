@@ -24,11 +24,11 @@ with open(cvspath) as revenueData:
 
        #total variable assignment 
            total_month = total_month + 1
-           total_revenue = total_revenue + int(row["Revenue"])
+           total_revenue = total_revenue + int(row["Profit/Losses"])
 
 #delta revenue 
-           revenue_change = int(row["Revenue"]) - previous_revenue
-           previous_Revenue = int(row["Revenue"])
+           revenue_change = int(row["Profit/Losses"]) - previous_revenue
+           previous_Revenue = int(row["Profit/Losses"])
            month_of_change = month_of_change + [row["Date"]]
 
            #largest increase assignment
